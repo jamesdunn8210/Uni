@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "750679781623",
+    "firebase_url": "https://takeaseat-56bfe.firebaseio.com",
+    "project_id": "takeaseat-56bfe",
+    "storage_bucket": "takeaseat-56bfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750679781623:android:79a33a428d821627",
+        "android_client_info": {
+          "package_name": "com.example.james.mapteste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750679781623-dr5o7e1tken12c6o5ua9d00vuohtrkpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.james.mapteste",
+            "certificate_hash": "cd74b0eaa0417df633c177c9cfed5c913a50a6a9"
+          }
+        },
+        {
+          "client_id": "750679781623-26haufa8hsf60ligfugeuqfik8pkhf3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrf-Lh8GKn32No-X94IT6r00nOTJ1KyYY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750679781623-26haufa8hsf60ligfugeuqfik8pkhf3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
