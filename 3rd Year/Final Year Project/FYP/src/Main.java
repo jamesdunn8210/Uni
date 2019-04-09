@@ -51,11 +51,7 @@ public class Main {
 		TileRenderer tr = new TileRenderer();
 		
 		World world = new World("world2.png");
-		
-		//MainMenu menu = new MainMenu();
-		
-
-		//GUI gui = new GUI();
+			
 		Game game = new Game(camera, world);
 		Player p1 = new Player(world, new Vector2f(7,6), 1);
 		//Player p2 = new Player(world, new Vector2f(22,6), 2);
@@ -66,72 +62,13 @@ public class Main {
 		double frame_time = 0;
 		double time = Timer.getTime();
 		double unprocessed = 0; //proccess for time where window dragged eg. 
-		
-//		Player current = p2;
-//		Player enemy = null;
-		
-		Player current = p2;
-		Player enemy = p1;
+			
+		Player current = p1;
+		Player enemy = p2;
 		
 		while(!win.shouldClose()) {
 			
-//			while(!menu.startGame()) {
-//				boolean can_render = false;
-//				
-//				double time_2 = Timer.getTime();
-//				double passed = time_2 - time; 
-//				unprocessed+=passed;
-//				frame_time+=passed;
-//				
-//				time = time_2; //stop game getting faster
-//				
-//				while(unprocessed>= frame_cap) 	{ //update loop
-//
-//					if(win.hasResized()) {
-//						camera.setProjection();
-//						gui.resizeCamera();
-//						glViewport(0,0,Window.WIDTH, Window.HEIGHT);
-//					}
-//					
-//					unprocessed-=frame_cap;
-//					can_render = true;
-//
-//					
-//					menu.update();
-//					
-//					
-//					
-////					if(current instanceof AI) {
-////						
-////						((AI) current).nextTurn();
-////					//if ai do this
-////					}
-////					else {
-////					game.nextTurn(current, enemy);
-////					}
-//					world.correctCamera();
-//					
-//					game.update(); //poll events
-//					if(frame_time >=1.0) {
-//						frame_time = 0;
-//					}
-//				}
-//			
-//				if(can_render) { //only render when scene changes
-//					glClear(GL_COLOR_BUFFER_BIT);
-//					//menu.render(camera, shader);
-//					world.render(tr, shader, camera);		
-//					menu.render(camera, shader);
-//					//p1.render(shader, camera);
-//					//p2.render(shader, camera);
-//					
-//					//gui.render();
-//
-//					win.swapBuffers();				
-//				}
-//				
-//			}
-			
+
 			while(!current.isDead()) {
 				
 			if(current == p2) {
@@ -186,8 +123,6 @@ public class Main {
 				p1.render(shader, camera);
 				p2.render(shader, camera);
 				
-				//gui.render();
-
 				win.swapBuffers();				
 			}
 			
